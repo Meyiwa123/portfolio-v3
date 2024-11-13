@@ -36,7 +36,7 @@ export default function Contact() {
       <form
         className="flex flex-col gap-4 w-full"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+          const { error } = await sendEmail(formData);
 
           if (error) {
             toast.error(error);

@@ -26,7 +26,7 @@ export const Intro = () => {
         </div>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
-          Hi, I'm Meyiwa
+          Hi, I&apos;m Meyiwa
         </h1>
         <p className="text-xl md:text-2xl mb-6 text-gray-600 dark:text-gray-300">
           Passionate Software Engineer & Robotics Enthusiast
@@ -34,8 +34,8 @@ export const Intro = () => {
         <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
           With over four years of hands-on experience, I thrive on building
           efficient, scalable systems and enjoy bringing digital solutions to
-          life. I’m driven to develop innovative applications and streamline
-          complex processes to solve real-world challenges.
+          life. I&apos;m driven to develop innovative applications and
+          streamline complex processes to solve real-world challenges.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">

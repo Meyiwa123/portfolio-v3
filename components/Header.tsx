@@ -78,7 +78,7 @@ const Header = () => {
               animate={{ opacity: 1, x: 0 }}
               className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text"
             >
-              Meyiwa's Portfolio
+              Meyiwa&apos;s Portfolio
             </motion.div>
 
             {/* Centered Navigation Tabs */}
