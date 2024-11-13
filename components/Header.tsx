@@ -2,14 +2,12 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Moon, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 import { SECTIONS } from "@/constants";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [activeSection, setActiveSection] = useState<string | null>(null);
 
   // Set dark mode based on system preference on initial load
   useEffect(() => {
@@ -39,33 +37,6 @@ const Header = () => {
     }
   };
 
-  // Track scroll position to update active section
-  useEffect(() => {
-    const updateActiveSectionOnScroll = () => {
-      const sections = SECTIONS.map((section) =>
-        document.getElementById(section.toLowerCase())
-      );
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-      for (const section of sections) {
-        if (
-          section &&
-          section.offsetTop <= scrollPosition &&
-          section.offsetTop + section.offsetHeight > scrollPosition
-        ) {
-          setActiveSection(section.id);
-          break;
-        }
-      }
-    };
-
-    window.addEventListener("scroll", updateActiveSectionOnScroll);
-    updateActiveSectionOnScroll(); // Initial check on load
-
-    return () =>
-      window.removeEventListener("scroll", updateActiveSectionOnScroll);
-  }, []);
-
   return (
     <>
       {/* Fixed Header */}
@@ -81,26 +52,23 @@ const Header = () => {
               Meyiwa&apos;s Portfolio
             </motion.div>
 
-            {/* Centered Navigation Tabs */}
-            <div className="flex items-center gap-4">
-              <Tabs defaultValue="home" className="hidden md:block">
-                <TabsList className="bg-transparent flex justify-center">
-                  {SECTIONS.map((item) => (
-                    <TabsTrigger
-                      key={item}
-                      value={item.toLowerCase()}
-                      className={`text-lg cursor-pointer transition-colors duration-200 hover:text-primary text-gray-700 dark:text-gray-300 ${
-                        activeSection === item.toLowerCase()
-                          ? "text-primary"
-                          : ""
-                      }`}
-                      onClick={() => scrollToSection(item)}
-                    >
-                      {item}
-                    </TabsTrigger>
-                  ))}
-                </TabsList>
-              </Tabs>
+            {/* Centered Navigation Links */}
+            <div className="flex items-center gap-6">
+              {/* Navigation Items */}
+              <div className="flex space-x-4">
+                {SECTIONS.map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => scrollToSection(item)}
+                    className="text-lg cursor-pointer transition-all duration-200 
+                               hover:text-primary hover:bg-gray-100 
+                               dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 
+                               px-2 py-1 rounded-md"
+                  >
+                    {item}
+                  </button>
+                ))}
+              </div>
 
               {/* Dark Mode Toggle Button */}
               <Button

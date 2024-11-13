@@ -5,6 +5,8 @@ import { PROJECTS } from "@/constants";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ExternalLinkIcon } from "lucide-react";
+import Link from "next/link";
 
 export const Projects = () => {
   return (
@@ -33,7 +35,21 @@ export const Projects = () => {
                   className="w-full h-48 object-cover"
                 />
                 <CardContent className="p-6 flex flex-col justify-between h-full">
-                  <h3 className="font-bold text-xl mb-2">{project.title}</h3>
+                  <span className="flex items-center justify-between">
+                    <h3 className="font-bold text-xl">{project.title}</h3>
+                    {project.link && (
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 p-1 rounded-full text-gray-500 hover:text-pink-600"
+                        title="Visit project link"
+                      >
+                        <ExternalLinkIcon className="w-4 h-4" />
+                      </Link>
+                    )}
+                  </span>
+
                   <p className="text-muted-foreground mb-4">
                     {project.description}
                   </p>

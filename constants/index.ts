@@ -1,5 +1,6 @@
 import React from "react";
 import { Briefcase, GraduationCap } from "lucide-react";
+import { link } from "fs";
 
 export const SECTIONS = ["About", "Skills", "Experience", "Projects", "Contact"];
 
@@ -55,6 +56,7 @@ export const PROJECTS = [
     image: "/projects/aav.jpg",
     description:
       "Development of a ROS-based autonomous vehicle, implementing perception, localization, and control systems within a Linux environment.",
+    link: "https://carleton.ca/mae/wp-content/uploads/AAV-2023-2024-Xiao-Huang.pdf",
     tags: [
       "Linux",
       "Python",
@@ -71,6 +73,7 @@ export const PROJECTS = [
     description: [
       "Designed an autonomous UAV for passenger transport, focusing on safety, reliability, and efficiency.",
     ],
+    link: "https://carleton.ca/engineering-design/story/team-blackbird-takes-top-prize-in-aerial-evolution-association-of-canadas-national-student-drone-competition/",
     tags: [
       "Python",
       "JavaScript",
@@ -87,7 +90,8 @@ export const PROJECTS = [
     image: "/projects/manga.png",
     description:
       "Developed a web application that allows users to read and share manga in various languages, integrating a custom model to translate foreign text images to desired languages.",
-    tags: [
+    link: "https://github.com/Meyiwa123/MangaVerse",
+      tags: [
       "Svelte",
       "Tailwind CSS",
       "RESTful API",
@@ -106,25 +110,23 @@ export const PROJECTS = [
   {
     title: "LIDAR Data Processing",
     description:
-      "Developed a data processing pipeline for LIDAR sensor data, focusing on point cloud visualization, object detection, and mapping.",  
+      "Developed a data processing pipeline for LIDAR sensor data, focusing on point cloud visualization, object detection, and mapping.",
+    link: "https://github.com/Meyiwa123/LIDAR-Grid-Visualizer",
     image: "/projects/lidar.png",
-    tags: [
-      "Python",
-      "C++",
-      "ROS",
-      "PCL",
-    ],
+    tags: ["Python", "C++", "ROS", "PCL"],
   },
   {
-    name: "Home Lab CLI",
+    title: "Home Lab CLI",
     image: "/projects/cli.png",
+    link: "https://github.com/Meyiwa123/HomeLab_CLI",
     description:
       "Developed a command-line interface (CLI) tool to manage and monitor home lab infrastructure, integrating with various services and APIs.",
     tags: ["Python", "Docker", "Prometheus", "Grafana"],
   },
   {
-    name: "MSP432P401R Timer & Interrupt",
+    title: "MSP432P401R Timer & Interrupt",
     image: "/projects/rtos.png",
+    link: "https://github.com/Meyiwa123/Embedded-System-LED-Blinking",
     description:
       "Implemented a timer and interrupt system for the MSP432P401R microcontroller, focusing on real-time performance and sensor data processing.",
     tags: ["C", "Embedded Systems", "Microcontrollers", "RTOS"],
