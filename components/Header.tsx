@@ -55,13 +55,15 @@ const Header = () => {
             {/* Centered Navigation Links */}
             <div className="flex items-center gap-6">
               {/* Navigation Items */}
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 hidden md:flex">
+                {" "}
+                {/* Hidden on small screens, shown on md and larger */}
                 {SECTIONS.map((item) => (
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}
                     className="text-lg cursor-pointer transition-all duration-200 
-                               hover:text-primary hover:bg-gray-100 
+                               hover:text-primary hover:underline hover:bg-gray-100 
                                dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 
                                px-2 py-1 rounded-md"
                   >
