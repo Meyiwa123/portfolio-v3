@@ -28,12 +28,12 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/Meyiwa123/portfolio-v2
+    git clone https://github.com/Meyiwa123/portfolio-v3
     ```
 
 2. **Navigate into the project directory**:
     ```bash
-    cd portfolio-v2
+    cd portfolio-v3
     ```
 
 3. **Install project dependencies**:
