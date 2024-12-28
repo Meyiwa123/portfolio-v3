@@ -49,7 +49,7 @@ export const PROJECTS = [
     image: "/projects/probridge.png",
     description:
       "Developed a web application that simplifies lyrics design for Propresenter.",
-    link: "https://probridge.vercel.app/",
+    link: "https://pro-bridge.vercel.app/",
     tags: ["React", "Tailwind CSS", "Vercel", "Restful API"],
   },
   {
