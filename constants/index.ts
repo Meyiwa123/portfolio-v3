@@ -45,6 +45,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "ProBridge",
+    image: "/projects/probridge.png",
+    description:
+      "Developed a web application that simplifies lyrics design for Propresenter.",
+    link: "https://probridge.vercel.app/",
+    tags: ["React", "Tailwind CSS", "Vercel", "Restful API"],
+  },
+  {
     title: "Home Lab Infrastructure and Network Management",
     image: "/projects/portainer.png",
     description:
@@ -52,11 +60,19 @@ export const PROJECTS = [
     tags: ["Linux", "Docker", "Ansible", "Grafana", "Prometheus", "Networking"],
   },
   {
+    title: "Compiler Construction",
+    image: "/projects/compiler.png",
+    description:
+      "Designed and implemented a compiler for a custom programming language, focusing on lexical analysis, parsing, and code generation.",
+    link: "https://github.com/Meyiwa123/Smalltalk-Compiler",
+    tags: ["Smalltalk", "Assembly", "Compiler Design"],
+  },
+  {
     title: "Accessible Autonomous Vehicle",
     image: "/projects/aav.jpg",
     description:
       "Development of a ROS-based autonomous vehicle, implementing perception, localization, and control systems within a Linux environment.",
-    link: "https://carleton.ca/mae/wp-content/uploads/AAV-2023-2024-Xiao-Huang.pdf",
+    link: "https://github.com/Meyiwa123/Autonomous-Vehicle",
     tags: [
       "Linux",
       "Python",
@@ -91,7 +107,7 @@ export const PROJECTS = [
     description:
       "Developed a web application that allows users to read and share manga in various languages, integrating a custom model to translate foreign text images to desired languages.",
     link: "https://github.com/Meyiwa123/MangaVerse",
-      tags: [
+    tags: [
       "Svelte",
       "Tailwind CSS",
       "RESTful API",
@@ -103,6 +119,7 @@ export const PROJECTS = [
   {
     title: "Reyon Landing Page",
     image: "/projects/reyon.png",
+    link: "https://reyongroup.com/",
     description:
       "Designed and developed a landing page for Reyon Bottling Company, focusing on user experience and brand identity.",
     tags: ["React", "Tailwind", "Figma", "Responsive Design"],
