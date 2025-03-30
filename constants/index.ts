@@ -62,6 +62,14 @@ export const PROJECTS = [
     tags: ["React", "Tailwind CSS", "Vercel", "Restful API"],
   },
   {
+    title: "CPU Scheduler Visualizer",
+    image: "/projects/scheduler.png",
+    description:
+      "Developed a CPU scheduling algorithm visualizer using React, allowing users to simulate and analyze various CPU scheduling algorithms.",
+    link: "https://github.com/Meyiwa123/CPU-Scheduler",
+    tags: ["React", "TypeScript", "Operating Systems", "Algorithms"],
+  },
+  {
     title: "Home Lab Infrastructure and Network Management",
     image: "/projects/portainer.png",
     description:
