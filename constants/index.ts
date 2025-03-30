@@ -25,6 +25,15 @@ export const EXPERIENCES = [
   },
   {
     icon: React.createElement(Briefcase),
+    title: "Junior Aoftware Developer",
+    company: "NXoCare",
+    location: "Ottawa, Ontario, Canada",
+    period: "May 2024 - September 2024",
+    description:
+      "Developed and maintained NXoCare’s health information management web app, built RESTful APIs, integrated third-party healthcare APIs, and contributed to the NXoCare Health Information Notion Template.",
+  },
+  {
+    icon: React.createElement(Briefcase),
     title: "Software Team Lead",
     company: "Blackbird UAV",
     location: "Carleton University",
