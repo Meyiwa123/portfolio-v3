@@ -25,7 +25,7 @@ export const EXPERIENCES = [
   },
   {
     icon: React.createElement(Briefcase),
-    title: "Junior Aoftware Developer",
+    title: "Junior Software Developer",
     company: "NXoCare",
     location: "Ottawa, Ontario, Canada",
     period: "May 2024 - September 2024",
